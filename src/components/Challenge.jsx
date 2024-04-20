@@ -103,7 +103,6 @@ const Challenge = ({
 		setTimeout(() => {
 			setShowTimer(true); // Start the timer again after 2.5 seconds (2500 milliseconds)
 			if (selectedColor === currentColor) {
-				console.log("Correct answer!");
 				setChallengeStatus("Correct");
 
 				if (currentChallenge === totalChallenges) {
@@ -113,7 +112,6 @@ const Challenge = ({
 					generateChallenge();
 				}
 			} else {
-				console.log("Incorrect answer!");
 				setChallengeStatus("Incorrect");
 			}
 		}, 2500);
