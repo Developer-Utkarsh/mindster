@@ -5,6 +5,7 @@ const Challenge = ({
 	numOptions,
 	totalChallenges,
 	setGameLevel,
+	gameLevel,
 	enableConfusion,
 	timeLimit,
 }) => {
@@ -248,7 +249,7 @@ const Challenge = ({
 					) : (
 						<>
 							<div
-								className={`w-full border border-blue-600 font-average font-bold tracking-widest flex justify-center items-center text-5xl my-5 mb-2 rounded-lg py-10 ${
+								className={`w-full border border-blue-600 font-average font-bold tracking-widest flex justify-center items-center text-5xl my-5 mb-2 rounded-lg py-10 max-sm:py-4 max-md:py-6 ${
 									currentColor
 										? getColorClassName(currentColor)
 										: "text-slate-100"
@@ -259,7 +260,7 @@ const Challenge = ({
 							<p className='font-average text-lg text-slate-300 mb-3'>
 								What is the color of the above given text?
 							</p>
-							<div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 justify-center'>
+							<div className='w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 max-md:gap-1 justify-center'>
 								{options.map((color, index) => (
 									<Options
 										key={index}

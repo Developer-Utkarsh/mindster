@@ -13,13 +13,11 @@ const Game = () => {
 	};
 	return (
 		<div className='flex w-full h-screen justify-center items-center  '>
-			<div className='w-[50%] h-[75vh] glassmorphism border border-slate-600 px-6 py-3 pt-8 max-sm:w-[90%] max-md:w-[75%] max-md:h-[80vh] hover:border-slate-400 transition rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[100]  '>
+			<div className='w-[50%] h-[75vh] glassmorphism border border-slate-600 px-6 py-3 pt-8 max-sm:pt-4 max-sm:px-4 max-sm:py-2 max-sm:w-[70%] max-md:w-[70%] max-md:h-[80vh] max-sm:h-[85vh] hover:border-slate-400 transition rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[100] max-md:pt-5 '>
 				<h1 className='font-palanquin text-5xl text-slate-100 text-center tracking-wide font-bold max-sm:text-4xl flex justify-center items-center '>
 					MindSter
 				</h1>
-				<i className='fa-solid fa-circle-question text-slate-200 justify-end items-end flex absolute top-10 right-8 text-2xl hover:text-blue-600 transition hover:transform hover:scale-115 '></i>
 
-				
 				{!isPlaying && (
 					<div>
 						<Home togglePlaying={togglePlaying} />
