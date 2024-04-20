@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass {
+    backdrop-filter: blur(12px) saturate(150%);
+        -webkit-backdrop-filter: blur(12px) saturate(150%);
+        background-color: rgba(50, 50, 50, 0.5)
+        
+}
+.glassmorphism{
+    backdrop-filter: blur(16px) saturate(175%);
+        -webkit-backdrop-filter: blur(16px) saturate(175%);
+        background-color: rgba(0, 0, 0, 0.5);
+}
+.glassLevel{
+    backdrop-filter: blur(12px) saturate(100%);
+        -webkit-backdrop-filter: blur(12px) saturate(100%);
+        background-color: rgba(0, 0, 0, 0.25);
+}
+.buttonGlass{
+    backdrop-filter: blur(4px) saturate(100%);
+        -webkit-backdrop-filter: blur(4px) saturate(100%);
+}
+@layer components {
+    .activeLevel {
+        @apply bg-blue-600 border-2 border-white text-white;
+    }
+
+    .completedLevel {
+        @apply bg-green-600 border-2 border-white text-white;
+    }
+    .level{
+        @apply bg-gray-100 border-2 border-gray-300 text-gray-700;
+    }
+    .nextChallenge{
+        @apply opacity-100
+    }
+    .nextChallenge:hover{
+        @apply transform scale-105 transition border-2 border-slate-300
+    }
+}
