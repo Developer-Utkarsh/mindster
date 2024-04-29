@@ -16,8 +16,8 @@ const Footer = () => {
                     <div className='gap-3 text-xl text-slate-300 flex justify-start items-start cursor-pointer'>
 
                         <i className="fa-brands fa-instagram hover:text-blue-500" target="_blank" href="https://www.instagram.com/iam_utkarshtiwari/"></i>
-                        <i className="fa-brands fa-github hover:text-blue-500"></i>
-                        <i className="fa-brands fa-linkedin hover:text-blue-500"></i>
+                        <i className="fa-brands fa-github hover:text-blue-500" target="_blank" href="https://github.com/Developer-Utkarsh/" ></i>
+                        <i className="fa-brands fa-linkedin hover:text-blue-500" target="_blank" href="https://www.linkedin.com/in/developerutkarsh/" ></i>
                     </div>
                 </div>
 
